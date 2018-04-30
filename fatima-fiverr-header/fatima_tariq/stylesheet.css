@@ -1,0 +1,106 @@
+body{
+    background-color: snow;
+    margin: 0px; /* to over-ride the extra margin space on the edges*/
+    font-family: verdana, serif; /*2 font set here if one of them is not supported by web browser then other one works(this will reduce run time error*/ 
+    font-size: 14px;/*by default font size is 14px this will over-ridden by using tags in body part*/    
+}
+
+#logo{
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+    height: 40px;
+}
+li{
+    float: left;
+    display: inline-block; 
+}
+.header{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+a:link,a:visited{
+    display: block;
+    font-weight:500;
+    color: gray;
+    background-color: snow;
+    width: 120px;
+    text-align: right;
+    padding-top: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+a:hover, a:active{
+    
+}
+#search{
+    padding-right: 400px;
+    padding-left: 10px;
+    max-width: 1000px;
+    margin: auto
+        
+}
+#dashbord{
+    padding-left: 30px;
+    padding-top: 2px; 
+}
+#cart{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+#profile{
+    padding-left: 30px;
+}
+#dashbord img:hover{
+}
+    
+    
+
+input[type=text]{
+    width: 85%;
+    padding: 8px;
+    font-family: serif;
+    font-size: 17px;
+    border: 1px solid;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    font-style: italic;
+}
+input[type=submit]{
+    position: absolute;
+    padding: 8px;
+    width: 8%;
+    font-family: serif;
+    font-size: 17px;
+    text-shadow: 0 0 1px #000;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-right: 5px;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(green, lightgreen);
+    border: 1px solid #0076a3;
+}
+#nav_bar{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-size: 11px
+     
+    
+    
+    
+}
+.nav_bar{
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+
+
+

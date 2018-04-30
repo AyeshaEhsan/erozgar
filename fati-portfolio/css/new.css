@@ -1,0 +1,15 @@
+.mypadding{
+    padding-right: 50px;
+}
+
+#H2 {
+    padding-left: 150px
+}
+@media only screen (min-device-width :320px)
+{
+   body
+   {
+      width: 100%;
+   }
+
+}

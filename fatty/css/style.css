@@ -1,0 +1,707 @@
+
+/*=====================================================Details Start Here===========================================*/
+/*
+Template : Reyaz | Personal Portfolio
+Author : ReyazIrfan
+*/
+
+
+/*-------------------------Table of Content Start-----------------*/
+/*
+1.    Section   =   Basic Css
+2.    Section   =   Nabbar
+3.    Section   =   Vegas / Slider
+4.    Section   =   About
+5.    Section   =   Service
+6.    Section   =   Protfolio
+7.    Section   =   Blog
+8.    Section   =   Contact
+9.    Section   =   Responsive
+*/
+/*-------------------------Table of Content End-----------------*/
+
+/*=====================================================Details End Here===========================================*/
+
+/*------Import CSS file & Google Font------*/
+@import "hover.css";
+@import "animate.css";
+@import "../vendors/vegas/vegas.min.css";
+@import "../vendors/gmap/gmap.css";
+@import "font-awesome.min.css";
+@import "responsive.css";
+
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age');
+
+
+
+
+
+
+
+/*==============================1.   Basic CSS Start Here==============================*/
+body {
+    position: relative;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2em;
+    color: black;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+}
+*, p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width:100%;
+}
+.heading{
+    text-align: center;
+    padding: 70px 0 30px;
+}
+
+.heading > h2:first-child{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+.heading > p:nth-child(2){
+    text-transform: capitalize;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+/*==============================Basic CSS End Here==============================*/
+
+
+
+
+
+
+
+
+/*==============================2.   Navbar CSS Start Here==============================*/
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Atomic Age', cursive;
+}
+nav {
+    background: transparent;
+    border: none;
+    margin: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 99;
+}
+nav.affix {
+    background: #58d1ca;
+    padding: 0;
+    position: fixed;
+    top: 0;
+}
+#mainmenu ul.nav.navbar-nav li a {
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    margin: 10px 15px;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+/*==============================Navbar CSS End Here==============================*/
+
+
+
+
+
+
+
+
+
+/*==============================3.   Vegas / Slider Section Start Here==============================*/
+#vegas{
+    min-height: 670px;
+}
+#vegas > div{
+    background: rgba(255, 255, 255, 0.36);
+}
+#vegas .container > div:first-child{
+    padding-top: 16%;
+}
+#vegas .container > div:first-child > p:first-child{
+    padding-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+#vegas .container > div:first-child > h1:nth-child(2){
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-family: 'Atomic Age', cursive;
+    padding: 10px 0;
+    line-height: 1em;
+}
+#vegas .container > div:first-child > p:nth-child(3){
+    letter-spacing: 11px;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding-bottom: 20px;
+}
+/*--------Social Icon---------*/
+#vegas .container > div:nth-child(2) > p {
+    display: inline-block;
+    padding: 15px 0;
+    width: 50px;
+    margin: 0 13px;
+    color: #ffffff;
+    font-size: 20px;
+}
+#vegas .container > div:nth-child(2) > p:first-child{
+    background: #4867AA;
+    border: 2px solid #4868AA;
+}
+#vegas .container > div:nth-child(2) > p:nth-child(2){
+    background: #1DA1F2;
+    border: 2px solid #1DA1F2;
+}
+#vegas .container > div:nth-child(2) > p:nth-child(3){
+    background: #FF0000;
+    border: 2px solid #FF0000;
+}
+#vegas .container > div:nth-child(2) > p:nth-child(4){
+    background: #007BB0;
+    border: 2px solid #007BB0;
+}
+#vegas .container > div:nth-child(2) > p:nth-child(5){
+    background: #323131;
+    border: 2px solid #323131;
+}
+#vegas .container > div:nth-child(2) > p:hover{
+    background: transparent;
+    transition: 0.3s;
+    color: inherit;
+}
+/*==============================Vegas / Slider Section end Here==============================*/
+
+
+
+
+
+/*==============================4.   About Section Start Here==============================*/
+
+#about .container:first-child > div:nth-child(2) > div:nth-child(2) .level{
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: inherit;
+}
+#about > .container:first-child > div:nth-child(3) .persent{
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: inherit;
+}
+.progress-bar-success {
+    background-color: #58d1ca;
+}
+#about > div:nth-child(2) > .container > div > p:first-child{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#about > div:nth-child(2){
+    padding: 25px 0;
+    background-image: url("../images/paralex/education.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about > div:nth-child(2) > .container > div > div{
+    border: 1px solid #ffffff;
+}
+#about > div:nth-child(2) > .container > div > div > p{
+    color: #ffffff;
+}
+#about > div:nth-child(2) > .container > div > div:hover{
+    background: rgba(255, 255, 255, 0.22);
+    color: black;
+    transition: 0.5s;
+}
+/*==============================About Section End Here==============================*/
+
+
+
+
+
+
+/*==============================5.   Service Section Start Here==============================*/
+#service{
+    background-color: #ffffff;
+    color: #020202;
+}
+#service > div:nth-child(3){
+    height: 120px;
+    background-color: #58d1ca;
+}
+#service .container > div > div{
+    webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+#service > div:nth-child(3) > p:first-child{
+    letter-spacing: 3px;
+    padding: 49px 0 0;
+    color: #ffffff;
+    font-size: 17px;
+}
+#service > div:nth-child(3) > p > span{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#service > div:nth-child(3) > p > span > a{
+    text-decoration: none;
+    padding: 10px 15px;
+}
+#service > div:nth-child(3) > p > span:hover{
+    color: #58d1ca;
+    background-color: #ffffff;
+    border: 1px solid #58d1ca;
+}
+#service > div:nth-child(3) > p > span{
+    margin-left: 150px;
+}
+#service .container > div{
+    text-align: center;
+    padding: 20px;
+}
+#service .container > div .fa{
+    font-size: 25px;
+}
+#service .container > div > p i{
+    font-size: 30px;
+}
+/*==============================Service Section End Here==============================*/
+
+
+
+
+
+
+
+/*==============================6.   Portfolio Section Start Here==============================*/
+
+#portfolio  .container{
+    width: 100%;
+}
+
+#portfolio .btn {
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+#portfolio .btn:focus, #portfolio .btn:hover, #portfolio .btn.mixitup-control-active {
+    background: #58d1ca;
+    color: #ffffff;
+    text-decoration: none;
+}
+#portfolio .container > div > div{
+    webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    padding: 0;
+    margin-bottom: 20px;
+}
+#portfolio .container > div a{
+    color: #ffffff;
+    display: block;
+    background: #58d1ca;
+    text-align: center;
+}
+/*-----------Client section------------*/
+.carousel-indicators .active {
+    background-color: #58d1ca;
+    width: 25px;
+    height: 10px;
+}
+.carousel-indicators li{
+    background-color: #58d1ca;
+    height: 10px;
+    width: 10px;
+}
+
+#clints > #testomonial > #slider{
+    /width: 700px;
+    height: 250px;
+}
+#clints .heading{
+    padding-top: 40px;
+    margin: 0 0 20px;
+}
+#clints > #testomonial > #slider .item{
+    text-align: center;
+}
+
+/*==============================Portfolio Section End Here==============================*/
+
+
+
+
+
+
+
+/*==============================7.   Blog Section Start Here==============================*/
+#blog .container > div:nth-child(2) > div{
+    margin: 0 5px 25px 0;
+    webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+}
+#blog .container > div:nth-child(2) > div img{
+    padding-top: 12px;
+    margin: 0 auto;
+}
+#blog .container > div:nth-child(3){
+    webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+}
+#blog .container > div:nth-child(2) > div a{
+    color: #58d1ca;
+    font-weight: bold;
+}
+#blog .container > div:nth-child(3) a{
+    color: #58d1ca;
+    font-weight: bold;
+    margin: 5px 0;
+}
+/*==============================Blog Section End Here==============================*/
+
+
+
+
+
+
+
+/*==============================8.   Contact Section Start Here==============================*/
+#contact .container div:nth-child(2) > form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 34px;
+    border: 1px solid #58d1ca;
+}
+#contact .container div:nth-child(2) > textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    border: 1px solid #58d1ca;
+}
+#contact .container div:nth-child(2) > button:focus{
+    outline: none;
+}
+#contact .container div:nth-child(2) > button{
+    background: #58d1ca;
+    border: 1px solid #58d1ca;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-size: 18px;
+}
+#contact .container div:nth-child(2) > button:hover{
+    background: transparent;
+    color: #58d1ca;
+}
+#contact .container div:nth-child(3) > div:nth-child(2){
+    width: 232px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 58px;
+    padding: 10px;
+}
+#contact .container > div:nth-child(3){
+    webkit-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 16px 0 rgba(0, 0, 0, 0.15);
+}
+/*==============================Contact Section End Here==============================*/
+
+
+
+
+
+
+
+/*==============================9.  Footer Part Start Here==============================*/
+footer{
+    background-color: #58d1ca;
+    color: #ffffff;
+    padding: 20px 0;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+footer .setting > p{
+    display: inline-block;
+    padding: 0 15px;
+}
+footer .setting > p a{
+    color: #ffffff;
+    font-size: 20px;
+}
+footer .setting{
+    text-align: center;
+}
+/*==============================9.  Footer Part End Here==============================*/
+
+
+
+
+
+
+
+/*==============================10.  Back to Top Part Start Here==============================*/
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #58d1ca;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
+.scroll-top-wrapper span{
+    color: #ffffff;
+}
+/*==============================10.  Back to Top Part End Here==============================*/
+
+
+
+
+
+/*=================Responsive Style Start Here==========*/
+
+@media (max-width: 319px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+    .navbar-header button .icon-bar {
+        background: black;
+    }
+    #mainmenu{
+        background: #58d1ca;
+    }
+
+    #vegas .container > div:first-child {
+        padding-top: 60%;
+    }
+    #vegas .container > div:nth-child(2) > p {
+        padding: 15px 0;
+        width: 30px;
+        margin: 0;
+    }
+    #about > div:nth-child(2) > .container > div > div{
+        margin: 5px 0;
+    }
+
+    #service > div:nth-child(3) > p:first-child{
+        padding-top: 4px;
+    }
+    #service > div:nth-child(3) > p > span{
+        display: inline-block;
+        margin-left: 0;
+    }
+    #portfolio .btn {
+        margin-left: 0px;
+        margin-bottom: 17px;
+    }
+    #clints > #testomonial > #slider{
+        height: 620px;
+    }
+    #blog .container > div:nth-child(2) > div{
+        text-align: center;
+    }
+    #contact .container div:nth-child(2) > button{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+
+    .navbar-header button .icon-bar {
+        background: black;
+    }
+    #mainmenu{
+        background: #58d1ca;
+    }
+
+    #vegas .container > div:first-child {
+        padding-top: 50%;
+    }
+    #vegas .container > div:nth-child(2) > p{
+        margin-bottom: 15px;
+    }
+    #about > div:nth-child(2) > .container > div > div{
+        margin: 10px 0;
+    }
+    #service > div:nth-child(3) > p:first-child{
+        padding-top: 20px;
+    }
+    #service > div:nth-child(3) > p > span{
+        margin-left: 0;
+    }
+    #clints > #testomonial > #slider{
+        height: 460px;
+    }
+    #blog .container > div:nth-child(2) > div{
+        text-align: center;
+    }
+    #contact .container div:nth-child(2) > button{
+        margin-bottom: 30px;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+    .navbar-header button .icon-bar {
+        background: black;
+    }
+    #mainmenu{
+        background: #58d1ca;
+    }
+
+    #vegas .container > div:first-child {
+        padding-top: 35%;
+    }
+    #about > div:nth-child(2) > .container > div{
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    #service .container > div{
+        width: 50%;
+    }
+
+    #service > div:nth-child(3) > p:first-child{
+        padding-top: 40px;
+    }
+    #service > div:nth-child(3) > p > span{
+        margin-left: 0;
+    }
+    #portfolio .container > div {
+        width: 50%;
+    }
+    #clints > #testomonial > #slider{
+        height: 350px;
+    }
+    #blog .container > div:nth-child(2) > div{
+        text-align: center;
+    }
+    #contact .container div:nth-child(2) > button{
+        margin-bottom: 30px;
+    }
+    #blog .container > div:nth-child(3) img{
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: 630px) and (max-width: 767px) {
+    .nav>li{
+        display: inline-block;
+    }
+    #clints > #testomonial > #slider{
+        height: 270px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+
+    #vegas .container > div:first-child {
+        padding-top: 30%;
+    }
+
+    #clints > #testomonial > #slider{
+        height: 310px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .wow{
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+    #vegas .container > div:first-child {
+        padding-top: 25%;
+    }
+}
+@media only screen and (min-width: 1224px) {
+
+}
+@media (min-width: 1025px) and (max-width: 1223px) {
+
+    #clints > #testomonial > #slider{
+        height: 290px;
+    }
+}

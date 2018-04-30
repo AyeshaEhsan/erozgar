@@ -1,0 +1,84 @@
+body{
+    background-image: url(sign_up.jpg);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#form{
+    background-color:transparent;
+    min-height: 700px;
+    padding: 5px 40px 40px 40px;
+    color: black;
+}
+.registration{
+    padding: 10px;
+    font-size: 55px;
+    font-family: agency FB;
+    font-weight: 700;
+    border-bottom-style: ridge;
+
+}
+.text{
+    height: 43px;
+    color: black;
+}
+label{
+    font-size: 18px;
+}
+.btn-primary{
+    border-radius: 0px;
+    padding: 10px;
+    width: 49%;
+
+}
+.btn-danger{
+    border-radius: 0px;
+    padding: 10px;
+    width: 49%;
+
+}
+.form-group{
+    color: black;
+
+}
+
+.login-options {
+    margin-top: 15px;
+    color: #9c9c9c;
+    margin-bottom: 25px;
+}
+
+
+h6{
+    color: black;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
